@@ -32,6 +32,24 @@ Se requiere un aplicativo web para que un administrador pueda gestionar los ingr
 
 > **SEMANA 1 Y 2**
 
+##  Sprint 2
+
+**OBJETIVO:** Crear clases para las entidades básicas de la aplicación.
+
+**Actividades**
+
+| Sprint 2 | Tarea                                                  | Definition of Done                                           |
+| -------- | ------------------------------------------------------ | :----------------------------------------------------------- |
+| Sprint 2 | Modelar una empresa como una clase de Java             | Es posible crear una instancia de la clase "Empresa" Es posible leer y modificar el nombre de la empresa Es posible leer y modificar la dirección de la empresa Es posible leer y modificar el teléfono de la empresa Es posible leer y modificar el NIT de la empresa |
+| Sprint 2 | Modelar un empleado como una clase de Java             | Es posible crear una nueva instancia de la clase "Empleado" Es posible leer y modificar el nombre de un empleado Es posible leer y modificar el correo de un empleado Es posible leer y modificar la empresa a la que el empleado pertenece Es posible leer y modificar el rol del empleado (administrador, operativo) |
+| Sprint 2 | Modelar el movimiento de dinero como una clase de Java | Es posible crear una nueva instancia de la clase "MovimientoDinero" Es posible leer y modificar el monto del movimiento Es posible crear montos positivos y negativos Es posible leer y modificar el concepto del movimiento Es posible definir qué usuario fue encargado de registrar el movimiento |
+
+
+
+
+
+
+
 
 
 
