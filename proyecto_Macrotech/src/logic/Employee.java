@@ -6,9 +6,7 @@ public class Employee {
     private String email;
     private Enum_RoleName role;
 
-    public enum Enum_RoleName {
-        Admin, Operario
-    }
+
     //metodo constructor
     public Employee(String nameEmployee, String email, Enum_RoleName role,String  name ) {
         this.nameEmployee = nameEmployee;

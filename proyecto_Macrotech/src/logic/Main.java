@@ -13,7 +13,7 @@ public class Main {
 
             System.out.println("-----------------------------------");
             //instanciando la clase empleado
-            Employee empleado = new Employee("heberto lozano","hebe-j1@hotmail.com", Employee.Enum_RoleName.Admin,"oracle");
+            Employee empleado = new Employee("heberto lozano","hebe-j1@hotmail.com",Enum_RoleName.Operario,"oracle");
             System.out.println("nombre del empleado: "+empleado.getNameEmployee());
             System.out.println("correo electronico: "+empleado.getEmail());
             System.out.println("rol: "+empleado.getRole());
