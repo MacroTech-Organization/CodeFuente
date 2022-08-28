@@ -2,25 +2,25 @@ package logic;
 
 public class Enterprise {
     //atributos de la clases empresa
-    private int Nit;
+    private int nit;
     private String name;
     private String addres;
     private String phone;
 
     // metodo constructor
-    public Enterprise(int Nit, String name, String addres, String phone) {
-        this.Nit= Nit;
+    public Enterprise(int nit, String name, String addres, String phone) {
+        this.nit= nit;
         this.name = name;
         this.addres = addres;
         this.phone = phone;
     }
     // getter and setter
     public long getNit() {
-        return Nit;
+        return nit;
     }
 
-    public void setNit(int Nit) {
-        this.Nit = Nit;
+    public void setNit(int nit) {
+        this.nit = nit;
     }
 
     public String getName() {

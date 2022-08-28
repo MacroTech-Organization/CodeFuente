@@ -19,31 +19,17 @@ public class Transaction {
 
     public int getId() { return id; }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    public void setId(int id) { this.id = id; }
 
-    public float getAmount() {
-        return amount;
-    }
+    public float getAmount() { return amount; }
 
-    public void setAmount(float amount) {
-        this.amount = amount;
-    }
+    public void setAmount(float amount) { this.amount = amount; }
 
-    public String getConcept() {
-        return concept;
-    }
+    public String getConcept() { return concept; }
 
-    public void setConcept(String concept) {
-        this.concept = concept;
-    }
+    public void setConcept(String concept) { this.concept = concept; }
 
-    public Employee getNameUserMov() {
-        return nameUserMov;
-    }
+    public Employee getNameUserMov() { return nameUserMov; }
 
-    public void setNameUserMov(Employee nameUserMov) {
-        this.nameUserMov = nameUserMov;
-    }
+    public void setNameUserMov(Employee nameUserMov) { this.nameUserMov = nameUserMov; }
 }//fin de la clase
