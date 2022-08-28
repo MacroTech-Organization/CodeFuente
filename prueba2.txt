@@ -1,3 +1,7 @@
 hola a todos esto es solo de ejemplo
 Realizando un cambio de ejemplo para verificar el acceso al repositorio
+<<<<<<< HEAD
 segunda prueba
+=======
+prueba fabian avila
+>>>>>>> 487a6d73d7f24ab7681acc4bc2daeb27c1ceb0d2

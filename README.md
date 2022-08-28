@@ -2,10 +2,17 @@
 
 ## Integrantes del Grupo
 
+
+
 | NOMBRES | APELLIDOS      | ROLES         |
 | ------- | -------------- | ------------- |
 | Heberto | Lozano Ramirez | Desarrollador |
 | Erika   | Lozano Ramirez | Scrum Master  |
+| Jhoan   | Vega Martinez  | Data Base     |
+|fabian|Avila|Product Owner|
+| Andres | Pantoja Herrera | Analista |
+
+
 
 Se requiere un aplicativo web para que un administrador pueda gestionar los ingresos y egresos de su empresa. El sistema debería permitir visualizar los totales de la empresa para que el gerente pueda tomar decisiones sobre la situación financiera. El procedimiento de registro de gastos y ventas es un proceso que puede ser tedioso, por lo que el administrador del sistema puede decidir delegar el registro a personal contable. Por tal motivo, la aplicación debe permitir la creación de nuevos usuarios que deben tener la posibilidad de efectuar nuevos movimientos de dinero. Sin embargo, dichos usuarios no deben ser capaces de modificar información sensible de la empresa, ni tampoco crear nuevos usuarios, con el fin de evitar riesgos de corrupción. Adicionalmente, debido a que las transacciones contables son supremamente delicadas, el sistema debería permitir llevar una trazabilidad de quién registró cada transacción, por lo cual el sistema debe contar con un sistema de autenticación.
 
@@ -44,6 +51,16 @@ Se requiere un aplicativo web para que un administrador pueda gestionar los ingr
 | Sprint 2 | Modelar una empresa como una clase de Java             | Es posible crear una instancia de la clase "Empresa" Es posible leer y modificar el nombre de la empresa Es posible leer y modificar la dirección de la empresa Es posible leer y modificar el teléfono de la empresa Es posible leer y modificar el NIT de la empresa |
 | Sprint 2 | Modelar un empleado como una clase de Java             | Es posible crear una nueva instancia de la clase "Empleado" Es posible leer y modificar el nombre de un empleado Es posible leer y modificar el correo de un empleado Es posible leer y modificar la empresa a la que el empleado pertenece Es posible leer y modificar el rol del empleado (administrador, operativo) |
 | Sprint 2 | Modelar el movimiento de dinero como una clase de Java | Es posible crear una nueva instancia de la clase "MovimientoDinero" Es posible leer y modificar el monto del movimiento Es posible crear montos positivos y negativos Es posible leer y modificar el concepto del movimiento Es posible definir qué usuario fue encargado de registrar el movimiento |
+
+
+
+## Sprint 3
+
+**OBJETIVO: **Crear el backend para la aplicación.
+
+### ACTIVIDADES
+
+
 
 
 
