@@ -1,4 +1,4 @@
-package logic;
+package edu.udea.macroTech;
 
 public class Enterprise {
     //atributos de la clases empresa
@@ -48,6 +48,3 @@ public class Enterprise {
     }
 
 }//fin de la clase
-
-
-

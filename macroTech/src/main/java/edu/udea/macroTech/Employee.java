@@ -1,4 +1,4 @@
-package logic;
+package edu.udea.macroTech;
 
 public class Employee {
     // atributos de la clase empleado
@@ -44,5 +44,3 @@ public class Employee {
 
     public void setEnterprise(Enterprise enterprise) { this.enterprise = enterprise; }
 }//fin de la clases
-
-

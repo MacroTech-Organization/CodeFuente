@@ -1,4 +1,4 @@
-package logic;
+package edu.udea.macroTech;
 
 public class Transaction {
 
@@ -32,4 +32,4 @@ public class Transaction {
     public Employee getNameUserMov() { return nameUserMov; }
 
     public void setNameUserMov(Employee nameUserMov) { this.nameUserMov = nameUserMov; }
-}//fin de la clase
+}//fin de la clase}
