@@ -60,6 +60,36 @@ Se requiere un aplicativo web para que un administrador pueda gestionar los ingr
 
 ### ACTIVIDADES
 
+| Sprint   | Tarea                                                        | Definition of Done                                           |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Sprint 3 | Crear controladores REST para la empresa                     | sistema devuelve responses 200 en la ruta /enterprises con los siguientes verbos:                                                                  **GET    POST **                                                                                       El sistema devuelve responses 200 en la ruta /enterprises/[id] con los siguientes verbos:                       **GET   PATCH   DELETE** |
+| Sprint 3 | Crear controladores REST para los usuarios                   | El sistema devuelve reponses 200 en la ruta /users con los siguientes verbos: **GET POST   **                                                    El sistema devuelve responses 200 en la ruta /user/[id] con los siguientes verbos: **GET  PATCH  DELETE** |
+| Sprint 3 | Crear controladores REST para los movimientos de una empresa especifica | El sistema devuelve reponses 200 en la ruta /enterprises/[id]/movements con los siguientes verbos: **GET  POST  PATCH  DELETE** |
+| Sprint 3 | Crear servicios para la empresa                              | El sistema permite consultar todas las empresas                El sistema permite consultar una sola empresa                   El sistema permite crear una empresa                                  El sistema permite editar una empresa                                 El sistema permite eliminar una empresa |
+| Sprint 3 | Crear servicios para el usuario                              | El sistema permite consultar todos los usuarios                   El sistema permite consultar un solo usuario                               El sistema permite crear un usuario                                                         El sistema permite editar un usuario                                                    El sistema permite eliminar un usuario |
+
+
+
+#   SPRINT 4
+
+**Objetivo** : Crear el frontend para la aplicación.
+
+### Actividades
+
+| Sprint   | Tarea                                                        | Definition of Done                                           |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Sprint 4 | Crear entidades y repositorios para la empresa               | La información de las empresas persiste en una base de datos relacional de PostgreSQL en Supabase |
+| Sprint 4 | Crear entidades y repositorios para la empresa               | La información de los usuarios persiste en una base de datos relacional de PostgreSQL en Supabase |
+| Sprint 4 | Crear entidades y repositorios para la empresa               | La información de los movimientos persiste en una base de datos relacional de PostgreSQL en Supabase |
+| Sprint 4 | Crear una interfaz para visualizar todos los movimientos de dinero de una empresa | Es posible visualizar una lista de los movimientos de dinero de la empresa y un total de todos los movimientos |
+| Sprint 4 | Crear una interfaz para que los usuarios puedan agregar un movimiento de dinero | Es posible para un usuario agregar un movimiento de dinero   |
+| Sprint 4 | Agregar autenticación                                        | El sistema está protegido por login                          |
+| Sprint 4 | Desplegar la interfaz                                        | Es posible acceder a la interfaz a través de internet        |
+
+
+
+
+
 
 
 
