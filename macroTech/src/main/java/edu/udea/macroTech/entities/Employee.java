@@ -1,4 +1,4 @@
-package edu.udea.macroTech;
+package edu.udea.macroTech.entities;
 
 public class Employee {
     // atributos de la clase empleado
@@ -40,7 +40,13 @@ public class Employee {
         this.role = role;
     }
 
-    public Enterprise getEnterprise() { return enterprise; }
+    public Enterprise getEnterprise() {
 
-    public void setEnterprise(Enterprise enterprise) { this.enterprise = enterprise; }
+        return enterprise;
+    }
+
+    public void setEnterprise(Enterprise enterprise) {
+
+        this.enterprise = enterprise;
+    }
 }//fin de la clases

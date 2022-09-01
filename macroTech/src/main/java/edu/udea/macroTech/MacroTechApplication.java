@@ -1,7 +1,8 @@
 package edu.udea.macroTech;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import edu.udea.macroTech.entities.Employee;
+import edu.udea.macroTech.entities.Enterprise;
+import edu.udea.macroTech.entities.Enum_RoleName;
 
 //@SpringBootApplication
 public class MacroTechApplication {
@@ -19,7 +20,7 @@ public class MacroTechApplication {
 
 		System.out.println("-----------------------------------");
 		//instanciando la clase empleado
-		Employee empleado = new Employee("heberto lozano","hebe-j1@hotmail.com",Enum_RoleName.Operario, empresa );
+		Employee empleado = new Employee("heberto lozano","hebe-j1@hotmail.com", Enum_RoleName.Operario, empresa );
 		System.out.println("nombre del empleado: "+empleado.getNameEmployee());
 		System.out.println("correo electronico: "+empleado.getEmail());
 		System.out.println("rol: "+empleado.getRole());

@@ -1,4 +1,4 @@
-package edu.udea.macroTech;
+package edu.udea.macroTech.entities;
 
 public class Enterprise {
     //atributos de la clases empresa

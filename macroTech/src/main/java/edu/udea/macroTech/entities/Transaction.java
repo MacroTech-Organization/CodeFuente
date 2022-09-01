@@ -1,4 +1,6 @@
-package edu.udea.macroTech;
+package edu.udea.macroTech.entities;
+
+import edu.udea.macroTech.entities.Employee;
 
 public class Transaction {
 
