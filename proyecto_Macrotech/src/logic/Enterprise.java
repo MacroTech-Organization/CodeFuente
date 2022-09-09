@@ -18,31 +18,22 @@ public class Enterprise {
     public long getNit() {
         return nit;
     }
-
-    public void setNit(int nit) {
-        this.nit = nit;
-    }
-
+    public void setNit(int nit) { this.nit = nit; }
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public String getAddres() {
         return addres;
     }
-
     public void setAddres(String addres) {
         this.addres = addres;
     }
-
     public String getPhone() {
         return phone;
     }
-
     public void setPhone(String phone) {
         this.phone = phone;
     }
