@@ -17,7 +17,4 @@ public interface EnterpriseService {
     boolean delete(int nit);
 
 
-
-
-
 }

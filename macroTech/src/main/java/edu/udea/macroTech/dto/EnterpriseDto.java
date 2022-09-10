@@ -12,6 +12,7 @@ public class EnterpriseDto {
 
 
     public EnterpriseDto() {
+
     }
 
     public EnterpriseDto(int nit, String name, String addres, String phone) {
