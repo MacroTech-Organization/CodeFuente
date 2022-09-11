@@ -1,23 +1,25 @@
-package edu.udea.macroTech.entities;
+package edu.udea.macroTech.dto;
 
-public class Employee {
-    // atributos de la clase empleado
+import edu.udea.macroTech.entities.Enterprise;
+import edu.udea.macroTech.entities.Enum_RoleName;
+
+public class EmployeeDto {
     private int idEmpleado;
     private String nameEmployee;
     private String email;
-    private Enum_RoleName role;
-    private Enterprise enterprise;
+    private String role;
+    private int enterprise;
 
-    //metodo constructor
-    public Employee(int idEmpleado, String nameEmployee, String email, Enum_RoleName role, Enterprise enterprise) {
-        this.idEmpleado = idEmpleado;
+    public EmployeeDto() {
+    }
+
+    public EmployeeDto(int idEmpleado,String nameEmployee, String email, String role, int enterprise) {
+        this.idEmpleado =idEmpleado;
         this.nameEmployee = nameEmployee;
         this.email = email;
         this.role = role;
         this.enterprise = enterprise;
-
     }
-    //getter and setter
 
     public int getIdEmpleado() {
         return idEmpleado;
@@ -43,21 +45,19 @@ public class Employee {
         this.email = email;
     }
 
-    public Enum_RoleName getRole() {
+    public String getRole() {
         return role;
     }
 
-    public void setRole(Enum_RoleName role) {
+    public void setRole(String role) {
         this.role = role;
     }
 
-    public Enterprise getEnterprise() {
-
+    public int getEnterprise() {
         return enterprise;
     }
 
-    public void setEnterprise(Enterprise enterprise) {
-
+    public void setEnterprise(int enterprise) {
         this.enterprise = enterprise;
     }
-}//fin de la clases
+}
