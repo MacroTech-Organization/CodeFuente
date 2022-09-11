@@ -31,7 +31,7 @@ public class EmployeeController {
 
     @GetMapping("/{idEmpleado}")
     public ResponseEntity<EmployeeDto> getByNit(@PathVariable int idEmpleado) {
-        var response = employeeService.getEmployeeByidEmpleado(idEmpleado);
+        var response = employeeService.getEmployeeByIdEmpleado(idEmpleado);
         if (response != null ) {
             return ResponseEntity.ok(response);
         }

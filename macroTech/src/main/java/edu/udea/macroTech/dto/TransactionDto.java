@@ -12,10 +12,10 @@ public class TransactionDto {
     private  int id;
     private  float amount;
     private String concept;
-    private Employee nameUserMov;
+    private int nameUserMov;
 
     // Constuctor de la clase Transaction
-    public TransactionDto(int id, float amount, String concept, Employee nameUserMov){
+    public TransactionDto(int id, float amount, String concept, int nameUserMov){
         this.id = id;
         this.amount = amount;
         this.concept = concept;
@@ -46,11 +46,11 @@ public class TransactionDto {
         this.concept = concept;
     }
 
-    public Employee getNameUserMov() {
+    public int getNameUserMov() {
         return nameUserMov;
     }
 
-    public void setNameUserMov(Employee nameUserMov) {
+    public void setNameUserMov(int nameUserMov) {
         this.nameUserMov = nameUserMov;
     }
 }

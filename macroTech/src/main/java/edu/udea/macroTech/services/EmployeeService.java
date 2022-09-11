@@ -11,7 +11,7 @@ public interface EmployeeService {
 
     void update(EmployeeDto employee);
 
-    EmployeeDto getEmployeeByidEmpleado(int idEmpleado);
+    EmployeeDto getEmployeeByIdEmpleado(int idEmpleado);
 
     boolean delete(int idEmpleado);
 

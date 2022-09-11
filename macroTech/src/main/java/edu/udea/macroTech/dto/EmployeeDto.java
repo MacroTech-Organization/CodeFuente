@@ -7,13 +7,13 @@ public class EmployeeDto {
     private int idEmpleado;
     private String nameEmployee;
     private String email;
-    private Enum_RoleName role;
-    private Enterprise enterprise;
+    private String role;
+    private int enterprise;
 
     public EmployeeDto() {
     }
 
-    public EmployeeDto(int idEmpleado,String nameEmployee, String email, Enum_RoleName role, Enterprise enterprise) {
+    public EmployeeDto(int idEmpleado,String nameEmployee, String email, String role, int enterprise) {
         this.idEmpleado =idEmpleado;
         this.nameEmployee = nameEmployee;
         this.email = email;
@@ -45,19 +45,19 @@ public class EmployeeDto {
         this.email = email;
     }
 
-    public Enum_RoleName getRole() {
+    public String getRole() {
         return role;
     }
 
-    public void setRole(Enum_RoleName role) {
+    public void setRole(String role) {
         this.role = role;
     }
 
-    public Enterprise getEnterprise() {
+    public int getEnterprise() {
         return enterprise;
     }
 
-    public void setEnterprise(Enterprise enterprise) {
+    public void setEnterprise(int enterprise) {
         this.enterprise = enterprise;
     }
 }
