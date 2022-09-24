@@ -1,6 +1,7 @@
 package edu.udea.macroTech.controllers;
 
 import edu.udea.macroTech.dto.EnterpriseDto;
+import edu.udea.macroTech.exceptions.ApiException;
 import edu.udea.macroTech.services.EnterpriseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,7 +29,7 @@ public class EnterpriseController {
     }
 
     @GetMapping("/{nit}")
-    public ResponseEntity<EnterpriseDto> getByNit(@PathVariable int nit) {
+    public ResponseEntity<EnterpriseDto> getByNit(@PathVariable int nit) throws ApiException {
         var response = enterpriseService.getEnterpriseByNit(nit);
         if (response != null ) {
             return ResponseEntity.ok(response);
@@ -38,7 +39,7 @@ public class EnterpriseController {
     }
 
     @DeleteMapping("/{nit}")
-    public ResponseEntity deleteByNit(@PathVariable int nit) {
+    public ResponseEntity deleteByNit(@PathVariable int nit) throws ApiException {
         var response = enterpriseService.delete(nit);
         if (response) {
             return ResponseEntity.accepted().build();
@@ -48,14 +49,14 @@ public class EnterpriseController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void create(@RequestBody EnterpriseDto enterprise){
+    public void create(@RequestBody EnterpriseDto enterprise) throws ApiException {
         enterpriseService.create(enterprise);
 
     }
 
     @PatchMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void update(@RequestBody EnterpriseDto enterprise){
+    public void update(@RequestBody EnterpriseDto enterprise) throws ApiException {
         enterpriseService.update(enterprise);
     }
 
