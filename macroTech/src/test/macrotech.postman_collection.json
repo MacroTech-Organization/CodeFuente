@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "90982228-01a2-4eb4-b5e0-cabbeb00570e",
+		"name": "macrotech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "enterprise",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/enterprise",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enterprise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by nit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/enterprise/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enterprise",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete by nit",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/enterprise/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enterprise",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"nit\": 5,\n        \"name\": \"ASD\",\n        \"addres\": \"Bogotá\",\n        \"phone\": \"455555\"\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/enterprise",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enterprise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"nit\": 5,\n        \"name\": \"UBER\",\n        \"addres\": \"Bogotá\",\n        \"phone\": \"455555\"\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/enterprise",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enterprise"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
