@@ -30,6 +30,6 @@ public class RegistroController {
 
         usuarioService.crearUsuario(nuevo);
 
-        return "login/login";
+        return "index";
     }
 }

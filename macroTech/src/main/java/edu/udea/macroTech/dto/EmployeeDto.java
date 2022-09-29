@@ -1,7 +1,6 @@
 package edu.udea.macroTech.dto;
 
 import edu.udea.macroTech.entities.Enterprise;
-import edu.udea.macroTech.entities.Enum_RoleName;
 
 public class EmployeeDto {
     private int idEmpleado;

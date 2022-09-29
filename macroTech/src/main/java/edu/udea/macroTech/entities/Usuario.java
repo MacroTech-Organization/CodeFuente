@@ -9,9 +9,10 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "usuario")
+@Table(name = "usuario", uniqueConstraints = { @UniqueConstraint(columnNames = { "numero_documento"}) })
 @Getter
 @Setter
 @AllArgsConstructor
@@ -28,7 +29,8 @@ public class Usuario {
     @Column(name = "tipo_documento")
     private String tipoDocumento;
 
-    @Column(name = "numero_documento")
+
+    @Column(name = "numero_documento", unique = true)
     private String numeroDocumento;
 
     @Column(name = "nombres")

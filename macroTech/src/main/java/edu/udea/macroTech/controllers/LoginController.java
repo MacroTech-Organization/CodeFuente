@@ -10,7 +10,7 @@ public class LoginController {
 
   @GetMapping("login")
   public String index(){
-   return "login/login";
+   return "/";
   }
 
 

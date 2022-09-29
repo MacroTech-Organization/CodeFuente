@@ -1,37 +1,44 @@
 package edu.udea.macroTech.entities;
 
 import edu.udea.macroTech.entities.Employee;
+import edu.udea.macroTech.utils.GenerateUUID;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "transaction")
+@Getter
+@Setter
+@AllArgsConstructor
 public class Transaction {
 
-    //atributos de la clase movimiento de dinero
-    private  int id;
-    private  float amount;
-    private String concept;
-    private Employee nameUserMov;
 
-    // Constuctor de la clase Transaction
-    public Transaction(int id, float amount, String concept, Employee nameUserMov){
-        this.id = id;
-        this.amount = amount;
-        this.concept = concept;
-        this.nameUserMov = nameUserMov;
+    public Transaction() {
+        this.id = GenerateUUID.createUuid();
     }
-    //Getters and Setters
 
-    public int getId() { return id; }
+    @Id
+    @Column(name = "id_transaction")
+    private String id;
 
-    public void setId(int id) { this.id = id; }
+    @Column(name = "amount")
+    private double amount;
 
-    public float getAmount() { return amount; }
+    @Column(name = "concept")
+    private String concept;
 
-    public void setAmount(float amount) { this.amount = amount; }
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_employee", nullable = false)
+    private Employee employee;
 
-    public String getConcept() { return concept; }
 
-    public void setConcept(String concept) { this.concept = concept; }
-
-    public Employee getNameUserMov() { return nameUserMov; }
-
-    public void setNameUserMov(Employee nameUserMov) { this.nameUserMov = nameUserMov; }
-}//fin de la clase}
+}
